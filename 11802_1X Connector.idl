@@ -1,0 +1,19 @@
+
+	// 802_1X Connector.idl : IDL source for 802_1X Connector.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (802_1X Connector.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(31DC24CE-1673-48EF-91F4-00A3C5B072D6),
+	version(1.0),
+	helpstring("802_1X Connector 1.0 Type Library")
+]
+library My802_1XConnectoLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

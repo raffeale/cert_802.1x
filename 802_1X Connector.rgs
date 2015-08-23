@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{3087CD63-4674-402B-B818-7FAE9D83AED6} = s '802_1X Connector'
+		'802_1X Connector.EXE'
+		{
+			val AppID = s {3087CD63-4674-402B-B818-7FAE9D83AED6}
+		}
+	}
+}

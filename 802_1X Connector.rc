@@ -1,0 +1,336 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\802_1X Connector.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\cert.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 802.1X Connector"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,16,20,20
+    LTEXT           "802.1X Connector 1.12 版",IDC_STATIC,42,12,97,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,176,13,50,14,WS_GROUP
+    LTEXT           "适用于北京科技职业学院CERT网络 04.02.06",IDC_STATIC,49,
+                    35,157,8
+    LTEXT           "北京科技职业学院 04级计算机信息管理 3班 c00lM4n",
+                    IDC_STATIC,29,49,189,8
+    LTEXT           " 做自己想做的，不要让一块石头挡住你前行的路！",
+                    IDC_STATIC,19,77,181,8
+    LTEXT           "如果您在使用中遇到什么问题，请发邮件到dcp2k@163.com",
+                    IDC_STATIC,18,63,205,8
+    LTEXT           "作者：c00lm4n  测试:雷磊",IDC_STATIC,56,23,97,8
+END
+
+IDD_MY802_1XCONNECTOR_DIALOG DIALOGEX 0, 0, 239, 303
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "802.1X Connector 1.13 c00lm4n Build 060521"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "建立连接",IDC_CONNECT,8,281,39,14,BS_FLAT
+    PUSHBUTTON      "断开连接",IDC_DISCONNECT,69,281,39,14,BS_FLAT
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,7,7,
+                    225,70
+    PUSHBUTTON      "关  于",IDC_ABOUT,191,281,39,14,BS_FLAT
+    GROUPBOX        "",IDC_USERPWD,7,80,225,63
+    LTEXT           "上网时间:",IDC_STATIC,7,150,37,8
+    LTEXT           "",IDC_TIME,45,150,67,8
+    LTEXT           "用户名:",IDC_STATIC,36,96,29,8,NOT WS_GROUP
+    LTEXT           "口  令:",IDC_STATIC,36,116,29,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT1,77,92,99,12,ES_AUTOHSCROLL | NOT WS_BORDER | 
+                    WS_GROUP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,77,113,99,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "保存用户信息",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,77,130,64,10
+    PUSHBUTTON      "高级选项",IDC_CONFIG,130,281,39,14,BS_FLAT
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,165,226,108
+    CONTROL         "VIP",IDC_VIPCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,149,130,28,10
+    CONTROL         "VMAC",IDC_VMACCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,189,149,32,10
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 293, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择连接使用的网络适配器"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确  定",IDOK,236,87,50,14
+    LISTBOX         IDC_CARDLIST,7,6,279,78,LBS_EXTENDEDSEL | WS_HSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PROPPAGE_LARGE1 DIALOG DISCARDABLE  0, 0, 220, 237
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "连接设置"
+FONT 9, "新宋体"
+BEGIN
+    CONTROL         "IPAddress1",IDC_IP,"SysIPAddress32",WS_TABSTOP,101,31,
+                    82,12
+    GROUPBOX        "Virtual IP Address Setup",IDC_STATIC,7,2,206,96
+    LTEXT           "Virtual  IP 地址:",IDC_STATIC,30,31,69,8
+    LTEXT           "Virtual 网关地址:",IDC_STATIC,30,50,69,8
+    LTEXT           "Virtual 子网掩码:",IDC_STATIC,30,70,69,8
+    CONTROL         "IPAddress1",IDC_GATEWAY,"SysIPAddress32",WS_TABSTOP,101,
+                    49,82,12
+    CONTROL         "IPAddress1",IDC_NETMASK,"SysIPAddress32",WS_TABSTOP,101,
+                    67,82,12
+    GROUPBOX        "Virtual MAC Address",IDC_STATIC,7,98,206,41
+    EDITTEXT        IDC_MAC1,91,113,16,14,ES_AUTOHSCROLL
+    LTEXT           "Virtual MAC地址:",IDC_STATIC,19,116,65,8
+    EDITTEXT        IDC_MAC2,109,113,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAC3,127,113,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAC4,146,113,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAC5,163,113,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAC6,183,113,16,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,101,14,83,78,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "可用VIP列表:",IDC_STATIC,49,15,49,8
+END
+
+IDD_PROPPAGE_LARGE3 DIALOG DISCARDABLE  0, 0, 221, 242
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "使用方法"
+FONT 9, "新宋体"
+BEGIN
+    LTEXT           "TODO: layout property page",IDC_STATIC,48,196,90,9
+END
+
+IDD_PROPPAGE_LARGE2 DIALOG DISCARDABLE  0, 0, 221, 240
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "辅助连接设置"
+FONT 9, "新宋体"
+BEGIN
+    GROUPBOX        "定时关机",IDC_STATIC,7,7,207,75
+    CONTROL         "手动关机",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,20,60,
+                    48,10
+    CONTROL         "自动关机",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,19,24,
+                    48,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "802_1X Connector Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "802_1X Connector\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "802_1X Connector.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "802_1X Connector 应用程序\0"
+            VALUE "ProductVersion", "1.07\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_MY802_1XCONNECTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_LARGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_PROPPAGE_LARGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_PROPPAGE_LARGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\CERT.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 802_1X Connector(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\802_1X Connector.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

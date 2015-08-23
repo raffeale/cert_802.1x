@@ -1,0 +1,27 @@
+# Microsoft Developer Studio Generated Dependency File, included by 802_1X Connector.mak
+
+".\802_1X Connector.rc" : \
+	".\res\802_1X Connector.rc2"\
+	".\res\CERT.bmp"\
+	".\res\cert.ico"\
+	
+
+".\802_1X ConnectorDlg.cpp" : \
+	".\802_1X Connector.h"\
+	".\802_1X ConnectorDlg.h"\
+	".\ChooseCard.h"\
+	".\md5.h"\
+	".\ProPage1.h"\
+	".\ProPage2.h"\
+	".\ProPage3.h"\
+	".\ProSheet.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\bittypes.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\ip6_misc.h"\
+	"c:\program files\microsoft visual studio\vc98\include\ipexport.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\IPHlpApi.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\IPTypes.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\pcap-bpf.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\pcap-stdinc.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\pcap.h"\
+	"C:\Program Files\Microsoft Visual Studio\VC98\Include\WSPiApi.h"\
+	
